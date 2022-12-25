@@ -1,0 +1,18 @@
+{
+  "name": "temp-with-bootstrap-and-sass",
+  "version": "1.0.0",
+  "description": "Microsoft",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass scss:css"
+  },
+  "author": "Hoso",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "fontawesome": "^5.6.3"
+  }
+}
