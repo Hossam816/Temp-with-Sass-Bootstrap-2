@@ -1,0 +1,15 @@
+.cards {
+
+    img,
+    h3,
+    p {
+        margin-bottom: 15px;
+    }
+
+    &-container {
+        @include media-breakpoint-down(md) {
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

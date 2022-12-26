@@ -1,0 +1,11 @@
+@use '../custom' as *;
+
+.btn {
+    width: auto !important;
+}
+
+.btn-links {
+    color: $blue;
+    font-weight: bold;
+    font-size: 25px;
+}

@@ -1,0 +1,33 @@
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px;
+
+    .logo {
+        width: 110px;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            padding: 0 10px;
+
+            a {
+                padding-bottom: 2px;
+
+                &:hover {
+                    border-bottom: 2px solid $gray-900;
+                }
+            }
+        }
+    }
+
+    .main-menu {
+        flex: 1;
+        margin-left: 20px;
+    }
+}

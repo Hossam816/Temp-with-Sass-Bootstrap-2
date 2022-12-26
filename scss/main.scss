@@ -1,1 +1,37 @@
-@use 'custom';
+@use 'custom' as *;
+
+//IMPORT ALL COMPONENTS
+
+@import './components/animation';
+@import './components/buttons';
+
+//IMPORT ALL THE SECTIONS
+
+@import './sections/navbar';
+@import './sections/intro-section';
+@import './sections/card-section';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: $white;
+    color: $black;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: $gray-900;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
