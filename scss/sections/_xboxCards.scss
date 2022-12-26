@@ -12,6 +12,7 @@
     background-size: cover;
     position: relative;
 
+
     &__content {
         width: 40%;
         padding: 4rem;
@@ -30,4 +31,16 @@
         }
     }
 
+}
+
+@include media-breakpoint-down(lg) {
+    .xbox-section {
+        p {
+            display: none;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+    }
 }

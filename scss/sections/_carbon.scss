@@ -27,3 +27,11 @@
         }
     }
 }
+
+@include media-breakpoint-down(lg) {
+    .carbon {
+        &-content {
+            width: 100%;
+        }
+    }
+}

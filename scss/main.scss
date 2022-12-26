@@ -8,6 +8,7 @@
 
 //IMPORT ALL THE SECTIONS
 
+@import './sections/menubarbtn';
 @import './sections/navbar';
 @import './sections/intro-section';
 @import './sections/card-section';
@@ -19,6 +20,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -27,6 +29,11 @@ body {
     color: $black;
     font-size: 15px;
     line-height: 1.5;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
 }
 
 a {

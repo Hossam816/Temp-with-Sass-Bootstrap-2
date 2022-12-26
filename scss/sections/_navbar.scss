@@ -1,3 +1,6 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
 .main-nav {
     display: flex;
     align-items: center;
@@ -30,4 +33,42 @@
         flex: 1;
         margin-left: 20px;
     }
+
+}
+
+@include media-breakpoint-down(lg) {
+    .main-menu {
+        display: block !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $gray-200;
+        width: 50%;
+        height: 100vh;
+        border-right: $primary 1px solid;
+        opacity: .9;
+        padding: 4rem;
+        transform: translateX(-500px);
+        @include transitionfunction;
+
+        &.show {
+            transform: translateX(-20px);
+        }
+
+        li {
+            padding: 1rem !important;
+            border-bottom: 1px solid $primary;
+            font-size: 1.5rem;
+
+            li:last-child {
+                border-bottom: 0;
+            }
+        }
+
+    }
+
+    .right-menu {
+        margin-right: 50px;
+    }
+
 }
