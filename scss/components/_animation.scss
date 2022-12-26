@@ -1,0 +1,5 @@
+@mixin transitionfunction () {
+    transition-duration: .25s;
+    transition-timing-function: linear;
+    transition-property: all;
+}

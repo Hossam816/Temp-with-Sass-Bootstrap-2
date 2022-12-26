@@ -1,0 +1,29 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.carbon {
+    background-image: url('../../images/carbon.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 4rem 0;
+    padding: 4rem 0;
+    width: 100%;
+    height: auto;
+    color: $white;
+
+    &-content {
+        width: 50%;
+        padding: 2rem;
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        .carbon-btn {
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+        }
+    }
+}

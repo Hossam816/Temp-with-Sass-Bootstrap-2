@@ -1,11 +1,18 @@
 @use '../custom' as *;
+@use '../components/animation' as *;
 
 .btn {
     width: auto !important;
+    @include transitionfunction;
+
+    &:hover {
+        opacity: .9;
+    }
 }
 
+
 .btn-links {
-    color: $blue;
-    font-weight: bold;
-    font-size: 25px;
+    color: $blue !important;
+    font-weight: bold !important;
+    font-size: 25px !important;
 }
